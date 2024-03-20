@@ -1,0 +1,23 @@
+# This is the files that Python creates to store compiled code.
+*__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# Sphinx files (mainly for the manpage generation)
+sphinx-files/
+
+# IDE
+.vscode/
+
+# Tests folder and files
+tests/
+tests.py
+
+# Other files & folders
+archives-content/
+dist/
+useful_info.md
+tools/
