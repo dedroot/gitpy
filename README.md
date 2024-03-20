@@ -53,7 +53,7 @@
 **GitPy** is a program that can be use to search and download a Git repository ([GitHub](https://github.com/), [GitLab](https://gitlab.com/)) using their respective API REST.
 The program was written in Python3 and designed to be use on Arch and Debian based Linux distributions.
 
-> [!NOTE] Info  
+> [!NOTE]  
 > The full README of this project will be available in the next release (v1.0.0). But if you want to preview it, or the rest of the tool, you can go to the [develop][gitpy_develop_branch] branch. Because this project gonna use the [GitFlow workflow][gitflow_url].
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
