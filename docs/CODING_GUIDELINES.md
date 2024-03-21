@@ -32,10 +32,13 @@ These are the directories that we actively using in the development:
 | [gitpy/](gitpy/) | Contains the \_\_main\_\_ file of GitPy |
 | [gitpy/commands](gitpy/commands/) | Contains the operations of all CLI commands of the tool |
 | [gitpy/configs](gitpy/configs/) | Contains the configuration files of the tool. The languages used for the configuration files is Python3 and Yaml |
-| [gitpy/core](gitpy/core/) | Contains the core files of the tool. Like the CLI arguments and parsing files |
+| [gitpy/core](gitpy/core/) | Contains the core files of the tool. Like the CLI arguments and parsing file |
 | [gitpy/manuals](gitpy/manuals/) | Contains manpage of the tool (page that you can have by running `man gitpy`) |
 | [gitpy/tools](gitpy/tools/) | Contains third party utilities to improve GitPy. If you have a new feature that require a specific third party package/tool version, you can add it here |
 | [gitpy/utils](gitpy/utils/) | Contains utilities of the tool (home made, not third party) |
+
+> [!NOTE]  
+> If your changes require a new directory, you have to inform us in the issue you opened and we will tell you if it's okay or not.
 
 ## Source style and other conventions
 
@@ -51,7 +54,7 @@ For this project, we actually using the [Black][black_url] and the [Isort][isort
 
 2. If you don't have [pipx][pipx_url], then run the following command:
 
-   - If you are on a Debian based distro:
+    - If you are on a Debian based distro:
 
         ```shell
         sudo apt update && sudo apt install pipx
@@ -72,7 +75,7 @@ For this project, we actually using the [Black][black_url] and the [Isort][isort
 
 4. Now create a folder called **.vscode** in the project folder. After, create a file called **settings.json** in it. Open it an paste the following:
 
-    ```json
+    ```jsonc
     {
     // PYTHON
     "[python]": {
@@ -104,14 +107,14 @@ For the branch naming, we using the [GitFlow workflow][gitflow_url] branch namin
 | ----------: | :---------- |
 | `master` | The main branch. It's the branch that's MUST BE ALWAY STABLE. This branch should also always contain the latest stable release of the project |
 | `develop` | For working in progress for future releases. It will also have `-dev`, `-alpha` tags in it for release a beta version of the program |
-| `feature/<feature name>` | For new features are created and will be merged into the `develop` branch |
-| `bugfix/<bugfix name>` | For fixing a small bug that are not critical to fix it and will be merged into the `develop` branch |
-| `hotfix/<hotfix name>` | For quickly fixing critical issues in production code usually with a temporary solution and will be merged into the `master` and `develop` branches |
-| `release/<release version>` | For preparing a new production release (not a dev or other, **a stable one**) and will be merged into the `master` and `develop` branches |
-| `docs/<changes name>` | For documentation changes and will be merged into the `develop` branch |
-| `perf/<changes name>` | For performance improvements and will be merged into the `develop` branch |
-| `refactor/<changes name>` | For refactoring the code and will be merged into the `develop` branch |
-| `ci/<changes name>` | For changes to the CI configuration and will be merged into the `develop` branch |
+| `feat/<scope>` | For new features are created and will be merged into the `develop` branch |
+| `bugfix/<scope>` | For fixing a small bug that are not critical to fix it and will be merged into the `develop` branch |
+| `hotfix/<scope>` | For quickly fixing critical issues in production code usually with a temporary solution and will be merged into the `master` and `develop` branches |
+| `release/<version>` | For preparing a new production release (not a dev or other, **a stable one**) and will be merged into the `master` and `develop` branches |
+| `docs/<scope>` | For documentation changes and will be merged into the `develop` branch |
+| `perf/<scope>` | For performance improvements and will be merged into the `develop` branch |
+| `refactor/<scope>` | For refactoring the code and will be merged into the `develop` branch |
+| `ci/<scope>` | For changes to the CI configuration and will be merged into the `develop` branch |
 
 > [!NOTE]
 > If you want to use a different prefix, you just have to tell us in the issue you opened and we will tell you if it's okay or not.
@@ -158,7 +161,7 @@ The type must be one of the following:
 | `nic` | For "Not In Changelog", used when the commit doesn't have to be in the changelog (because it generated based on the commit type of this list). Can be used when, for example, you already push something and you see after that you forgot to remove some bad typo |
 
 > [!NOTE]
-> Also here, if you want to use a different type, you just have to tell us in the issue you opened and we will tell you if it's okay or not.
+> And also here, if you want to use a different type, you just have to tell us in the issue you opened and we will tell you if it's okay or not.
 
 ### Versioning
 
