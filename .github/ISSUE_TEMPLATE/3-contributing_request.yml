@@ -1,0 +1,82 @@
+name: "Contributing request" 
+description: "Request to contributing to GitPy"
+title: "[CONTRIBUTING REQUEST]: "
+labels: ['contributing/request']
+projects: ["dedroot/gitpy"]
+assignees:
+  - dedroot
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the contributing request Form of GitPy! 
+        In this Form, you have to specify all the information below to contributing with us.
+        If we got more questions, we will talk in this issue.
+
+  - type: textarea
+    id: change-description
+    attributes:
+      label: "Change description"
+      description: "Describe the changes you want to do."
+      placeholder: "A clear and concise description of your changes."
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why do you want to do this change?"
+      description: "Explain why the change is necessary."
+      placeholder: "A clear and concise description of why you want to do this change."
+
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: changes-types
+    attributes:
+      label: "What type of changes do you want to do?"
+      options:
+        - label: "Bug fix (non-breaking change which fixes an issue)"
+          required: false
+
+        - label: "New feature (non-breaking change which adds functionality)"
+          required: false
+
+        - label: "Breaking change (fix or feature that would cause existing functionality to change)"
+          required: false
+
+        - label: "Documentation (no code change)"
+          required: false
+
+        - label: "Refactor (refactoring production code)"
+          required: false
+
+        - label: "Other"
+          required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Extra information"
+      description: "Add any other information or context about the request here."
+      placeholder: "Any other information or context about the request."
+
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have confirmed that I searched if existing issues and pull requests already exist for the change I desire to contribute."
+          required: true
+
+        - label: "I read the Code of Conduct and I agree to follow it."
+          required: true
+
+        - label: "I read the Contributing document and I know how to contribute."
+          required: true

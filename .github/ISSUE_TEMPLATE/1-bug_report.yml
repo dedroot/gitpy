@@ -1,0 +1,86 @@
+name: "Bug Report"
+description: "Report a bug of GitPy."
+title: "[BUG]: "
+labels: ["bug"]
+projects: ["dedroot/gitpy"]
+assignees:
+  - dedroot
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the bug report Form of GitPy! 
+        In this Form, you have to specify all the information below to help us fixing your problem.
+        If we got more questions, we will talk in this issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What's the problem?"
+      description: "Give us the more precise information about the bug."
+      placeholder: "The bug is..."
+
+    validations:
+      required: true
+
+  - type: input
+    id: gitpy_version
+    attributes:
+      label: "GitPy's version"
+      description: "On which version you running GitPy?"
+      placeholder: "Example: 0.1.0 (you can find it using `gitpy.py version -v`)"
+
+    validations:
+      required: true
+
+  - type: input
+    id: poetry_version
+    attributes:
+      label: "Poetry's version"
+      description: "Which version of Poetry did you use to create the GitPy Python's environment?"
+      placeholder: "Example: 1.8.3 (you can find it using `poetry --version`)"
+
+    validations:
+      required: true
+
+  - type: input
+    id: pipx_version
+    attributes:
+      label: "PIPX's version (if used to install Poetry)"
+      description: "With version of PIPX did you use to install Poetry?"
+      placeholder: "Example: 1.4.1 (you can find it using `pipx --version`)"
+
+    validations:
+      required: false
+
+  - type: input
+    id: pyenv_version
+    attributes:
+      label: "Pyenv's version (if used to install a separate Python version)"
+      description: "Which version of Pyenv did you use to install the separate python3.11.6?"
+      placeholder: "Example: 2.3.35"
+
+    validations:
+      required: false
+
+  - type: textarea
+    id: traceback_logs
+    attributes:
+      label: "Relevant log/traceback output"
+      description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
+      render: shell
+
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: have_search
+    attributes:
+      label: "Finally, a few confirmations"
+      options:
+        - label: "I have confirmed the details provided in this report are concise as possible and does not contained vague information (ie. versions are correct, answers to questions are clear)."
+          required: true
+
+        - label: "I have confirmed this issue is unique and has not been reported already."
+          required: true
