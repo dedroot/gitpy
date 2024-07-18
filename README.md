@@ -56,7 +56,7 @@ All instructions to contribute to the project are present in the [CONTRIBUTING](
 
 ## License & Copyright
 
-Copyright © 2024 by dedroot
+Copyright © 2024 by dedroot and GitPy Development team
 
 Distributed under the [GNU GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html)  **only**.  \
 This is free software: you are free to change and redistribute it.  \
