@@ -180,7 +180,7 @@ Release candidate releases are labeled by appending `-rc` to the entire version 
 
 The source files name should consist of lowercase ASCII letters, numbers, dash ('-'), underscore ('_') and dot ('.'). to be sure that the files are compatible with different filesystems.
 
-The top of each source file should contain a header that give information about the source file (name, create/update date, small description, language (mainly Python3), and the version that the file will be), author of the project, copyright, maintainer(s).
+The top of each source file should contain a header that give information about the source file (name, create/update date, small description), copyright, and license.
 
 The file name must clearly describe the file's content and should not include any spaces.
 
@@ -258,7 +258,7 @@ GitPy source files are formatted via the [Black][black_url] and the [Isort][isor
 That's it! Now you can code with the Black and Isort formatter! Every time you save a python file (.py) in this project, the formatters will automatically format the code for you!
 
 > [!NOTE]  
-> The auto formatting will only do the job in the project folder (Workspace). If you want to auto format globally, you need to add the same content in the user settings.json. You can open it by open it the command palette with <kbd>CTRL</kbd> +  <kbd>SHIFT</kbd> + <kbd>p</kbd> and enter **settings.json**. While typing it, you will see the **Preferences: Open Settings (JSON)** option. Select it and only paste the content between the two curly brackets in the file (those in the begin and the end of the file).
+> The auto formatting will only do the job in the project folder (Workspace). If you want to auto format globally, you need to add the same content in the user settings.json. You can open it by open it the command palette with <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>p</kbd> and enter **settings.json**. While typing it, you will see the **Preferences: Open Settings (JSON)** option. Select it and only paste the content between the two curly brackets in the file (those in the begin and the end of the file).
 
 [black_url]: https://pypi.org/project/black/
 [conventional_commits_url]: https://www.conventionalcommits.org/en/v1.0.0/
